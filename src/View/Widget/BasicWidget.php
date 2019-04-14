@@ -73,6 +73,7 @@ class BasicWidget implements WidgetInterface
         return $this->_templates->format('input', [
             'name' => $data['name'],
             'type' => $data['type'],
+            'value' => $data['value'],
             'templateVars' => $data['templateVars'],
             'attrs' => $this->_templates->formatAttributes(
                 $data,
